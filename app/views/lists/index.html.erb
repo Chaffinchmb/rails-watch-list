@@ -1,9 +1,13 @@
-<h1>My Movie Lists</h1>
+<%= render 'components/banner' %>
 
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list.id) %></li>
-  <% end %>
-</ul>
-
-<%= link_to 'Add a new list', new_list_path %>
+<div class="container mb-3">
+  <div class="row mt-5">
+    <% @lists.each do |list| %>
+      <div class="col-4">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_1280.jpg)">
+          <%= link_to list.name, list_path(list), class: "text-white text-decoration-none" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

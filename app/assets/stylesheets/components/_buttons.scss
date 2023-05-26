@@ -1,0 +1,34 @@
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.btn-banner {
+  transition: all .5s ease;
+  color: rgb(181, 178, 178);
+  border: 1px solid rgb(181, 178, 178);
+  text-decoration: none;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &:hover {
+    color: #001F3F;
+    background-color: rgb(181, 178, 178);
+  }
+}
